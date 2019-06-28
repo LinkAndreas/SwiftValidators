@@ -1,13 +1,15 @@
-//
-//  Package.swift
-//  SwiftValidators
-//
-//  Created by Γιώργος Καϊμακάς on 20/09/16.
-//  Copyright © 2016 Γιώργος Καϊμακάς. All rights reserved.
-//
-
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(
-	name: "SwiftValidators"
+    name: "SwiftValidators",
+    products: [
+        .library(name: "SwiftValidators", targets: ["SwiftValidators"])
+    ],
+    targets: [
+        .target(
+            name: "SwiftValidators",
+            path: "Sources"
+        )
+    ]
 )
